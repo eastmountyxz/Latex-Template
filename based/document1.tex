@@ -1,0 +1,69 @@
+% 导言区
+\documentclass[12pt]{article}
+
+\usepackage{ctex}
+
+\newcommand{\myfont}{\textit{\textbf{\textsf{Font Text}}}}
+
+\title{My First Document}
+\author{Eastmount}
+\date{\today}
+
+% 正文区
+\begin{document}
+	\maketitle
+		
+	Hello World!
+	
+	% here is my big formula
+	\sffamily
+	Let $f(x)$ be defined by the formula $$f(x)=3x^2+x-1$$ which is a polynomial of degree 2.
+	
+	{\ttfamily
+	This feature is usually extracted by calling the sequence $X=\left\{ {api_1,api_2,...,api_n} \right\}$.}
+
+	My name is Eastmount!
+	
+	\myfont
+	
+	
+	% 字体族设置（罗马字体、无衬线字体、打字机字体）
+	\textrm{Roman Family} \textsf{Sans Serif Family} \texttt{Typerwriter Family}
+	
+	\rmfamily Roman Family {\sffamily Sans Serif Family} {\ttfamily Typerwriter Family}\\
+	
+	% 字体系列设置（粗细、宽度）
+	\textmd{Medium Series} \textbf{Boldface Series}
+	
+	{\mdseries Medium Series} {\bfseries Boldface Series}\\
+	
+	% 字体形状设置
+	\textup{Upright Shape} \textit{Italic Shape}
+	\textsl{Slanted Shape} \textsc{Small Caps Shape}
+	
+	{\upshape Upright Shape} {\itshape Italic Shape}
+	{\slshape Slanted Shape} {\scshape Small Caps Shape}
+	
+	% 中文字体
+	{\songti 宋体} \quad {\heiti 黑体} \quad {\fangsong 仿宋} \quad {\kaishu 楷书}\\
+	
+	中文字体的\textbf{粗体}与\textit{斜体}、\underline{下换线}\\
+	
+	% 字体大小设置
+	{\tiny			Hello}\\
+	{\scriptsize	Hello}\\
+	{\footnotesize	Hello}\\
+	{\small			Hello}\\
+	{\normalsize	Hello}\\
+	{\large			Hello}\\
+	{\Large			Hello}\\
+	{\LARGE			Hello}\\
+	{\huge			Hello}\\
+	{\Huge			Hello}\\
+	
+	% 中文字体大小
+	\zihao{3} 你好!
+	
+	
+\end{document}
+
