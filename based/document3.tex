@@ -1,0 +1,61 @@
+% 导言区
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{stfloats}
+\usepackage{caption}
+\usepackage{subfigure}
+
+% 指定图片在当前目录下figures目录下
+\graphicspath{{figures/}}
+
+% 正文区
+\begin{document}
+	
+	% 插入图片
+	\includegraphics{fig1}
+	% 缩放比例
+	\includegraphics[scale=0.5]{fig1}
+	% 固定图像高度
+	\includegraphics[height=2cm]{fig1.png}
+	% 固定图像宽度
+	\includegraphics[width=2cm]{fig1.png}
+	
+	% 图像高度和宽度基于
+	\includegraphics[height=0.2\textheight]{fig1.png}
+	\includegraphics[width=0.2\textwidth]{fig1.png}
+	
+	% 指定多个参数
+	\includegraphics[angle=-45,width=0.5\textwidth]{fig1.png}
+	
+	
+	\begin{figure*}[ht]
+		\centering
+		\includegraphics[width=0.80\textwidth]{fig2.png}
+		\caption{Framework of knowledge graph.}
+		\label{fig2}
+	\end{figure*}
+
+
+
+\begin{figure}[htbp]
+	\centering    %居中
+	\subfigure[name of the first figure] %第一张子图
+	{
+		\begin{minipage}[t]{0.4\textwidth}
+			\centering
+			\includegraphics[scale=0.15]{fig2}
+		\end{minipage}
+	}
+	\subfigure[name of the second figure] %第二张子图
+	{
+		\begin{minipage}[t]{0.4\textwidth}
+			\centering      
+			\includegraphics[scale=0.2]{fig3} 
+		\end{minipage}
+	}
+	\caption{name of the figure}        %大图名称
+	\label{fig-1}  %图片引用标记
+\end{figure}
+
+\end{document}
